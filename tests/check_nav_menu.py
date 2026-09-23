@@ -67,7 +67,7 @@ def find_nav_menu_toggle_issue(html, path):
 
 
 def main():
-    root = Path(__file__).resolve().parent.parent
+    root = Path(__file__).resolve().parent.parent / "public"
     html_files = sorted(root.glob("*.html")) + sorted(root.glob("en/*.html"))
     all_failures = []
     for path in html_files:
